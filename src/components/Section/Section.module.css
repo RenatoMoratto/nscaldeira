@@ -1,0 +1,27 @@
+.section {
+  margin-bottom: 2rem;
+}
+
+.title, .content {
+  padding: 0.2rem 1rem;
+
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 2.9rem;
+
+  background-color: var(--color-secundary);
+  color: rgba(0, 0, 0, 0.7);
+  font: 700 var(--typo-title)/1rem 'Cinzel', serif;
+  text-transform: capitalize;
+}
+
+.content {
+  line-height: 22px;
+  text-align: justify;
+  font-family: serif, sans-serif;
+  font-size: var(--typo-text);
+}
+
