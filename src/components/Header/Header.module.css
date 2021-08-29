@@ -1,12 +1,12 @@
 .header {
   padding: 1rem 0;
-  height: 20rem;
 }
 
 .topbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0.2rem 1rem;
   background-color: rgba(77, 0, 45, 0.2);
   height: 86px;
 }
@@ -24,12 +24,12 @@
 
 .title {
   font-family: 'Cinzel Decorative', cursive;
-  font-size: var(--typo-title);
+  font-size: 1.1631em;
   margin-bottom: 0;
 }
 
 .line {
-  width: 13.5rem;
+  width: 11.5rem;
   height: 1px;
   background-color: var(--color-black);
 }
@@ -37,7 +37,7 @@
 .sub-title {
   margin-top: 5px;
   font-family: serif, sans-serif;
-  font-size: var(--typo-sub-title);
+  font-size: 0.945em;
 }
 
 .identification {
