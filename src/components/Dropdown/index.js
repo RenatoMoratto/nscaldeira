@@ -1,6 +1,12 @@
 import style from './Dropdown.module.css'
 import { useState } from 'react'
 
+function Item(props) {
+    return (
+        <li className={style.item}><a href={`#${props.link}`}>{props.title}</a></li>
+    );
+}
+
 function Dropdown(props) {
     const [open, setOpen] = useState(false);
 
@@ -15,11 +21,11 @@ function Dropdown(props) {
             </div>
             {open && (
                 <div className={style.menu}>
-                    <li className={style.item}><a href="#home">Home</a></li>
-                    <li className={style.item}><a href="#sobre">Sobre</a></li>
-                    <li className={style.item}><a href="#area-de-atuacao">Área de Atuação</a></li>
-                    <li className={style.item}><a href="#contato">Contato</a></li>
-                    <li className={style.item}><a href="#localizacao">Localização</a></li>
+                    <Item link="home" title="Home" />
+                    <Item link="sobre" title="Sobre" />
+                    <Item link="area-de-atuacao" title="Área de Atuação" />
+                    <Item link="contato" title="Contato" />
+                    <Item link="localizacao" title="Localização" />
                 </div>
             )}
         </ul >

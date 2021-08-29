@@ -1,25 +1,22 @@
 .menu {
   position: absolute;
+  flex-direction: column;
   right: 0;
   top: 6.4rem;
   display: flex;
-  flex-direction: column;
-  width: 45vw;
-  padding: 0;
-  overflow: hidden;
+  width: 50vw;
   background-color: var(--color-secundary);
 }
 
 .item {
-  font-family: Serif;
-  font-weight: bold;
-  text-transform: capitalize;
-  list-style: none;
-  text-align: left;
-  padding: 0.8rem;
-  display: flex;
-  width: 45vw;
   position: relative;
+  display: flex;
+  padding: 0.8rem;
+  list-style: none;
+  font-family: serif, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  text-transform: capitalize;
 }
 
 .item:hover {
@@ -32,9 +29,10 @@
   height: 100%;
   width: 100%;
   color: #6f6b60;
+  font-size: var(--typo-sub-title);
 }
 
 .item > a:hover {
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
