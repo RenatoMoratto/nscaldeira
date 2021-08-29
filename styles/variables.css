@@ -1,0 +1,13 @@
+:root {
+  /* Colors */
+  --color-primary: #4d002d;
+  --color-secundary: #dad2bc;
+  --color-bg: #f5f1ed;
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Typography */
+  --typo-title: 1.3rem;
+  --typo-sub-title: 1.05rem;
+  --typo-text: 0.6rem;
+}
