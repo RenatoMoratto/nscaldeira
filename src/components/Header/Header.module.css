@@ -1,0 +1,49 @@
+.header {
+  padding: 1rem 0;
+  height: 20rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(77, 0, 45, 0.2);
+  height: 86px;
+}
+
+.logo {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+}
+
+.title,
+.sub-title {
+  font: 400;
+}
+
+.title {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: var(--typo-title);
+  margin-bottom: 0;
+}
+
+.line {
+  width: 13.5rem;
+  height: 1px;
+  background-color: var(--color-black);
+}
+
+.sub-title {
+  margin-top: 5px;
+  font-family: serif, sans-serif;
+  font-size: var(--typo-sub-title);
+}
+
+.identification {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
