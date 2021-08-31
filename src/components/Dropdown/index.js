@@ -1,9 +1,24 @@
 import style from './Dropdown.module.css'
 import { useState } from 'react'
+// import Link from 'next/link';
+import { Link } from "react-scroll";
 
 function Item(props) {
+    const handleClose = () => setTimeout(props.handleClose, 100);
     return (
-        <li className={style.item}><a href={`#${props.link}`}>{props.title}</a></li>
+        <li className={style.item}>
+            <Link
+                onClick={handleClose}
+                activeClass="active"
+                to={`${props.link}`}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            >
+                {props.title}
+            </Link>
+        </li>
     );
 }
 
@@ -21,11 +36,11 @@ function Dropdown(props) {
             </div>
             {open && (
                 <div className={style.menu}>
-                    <Item link="home" title="Home" />
-                    <Item link="sobre" title="Sobre" />
-                    <Item link="area-de-atuacao" title="Área de Atuação" />
-                    <Item link="contato" title="Contato" />
-                    <Item link="localizacao" title="Localização" />
+                    <Item handleClose={clickHandler} link="home" title="Home" />
+                    <Item handleClose={clickHandler} link="sobre" title="Sobre" />
+                    <Item handleClose={clickHandler} link="area-de-atuacao" title="Área de Atuação" />
+                    <Item handleClose={clickHandler} link="contato" title="Contato" />
+                    <Item handleClose={clickHandler} link="localizacao" title="Localização" />
                 </div>
             )}
         </ul >
