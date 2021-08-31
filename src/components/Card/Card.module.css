@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40vw;
+  height: 40vw;
+
+  background: rgba(77, 0, 45, 0.6);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  font-family: 'Cinzel', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(var(--typo-sub-title) - 2px);
+  line-height: 28px;
+  text-transform: capitalize;
+
+  color: var(--color-bg);
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

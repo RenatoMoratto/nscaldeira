@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-rows: 40vw 40vw;
+  grid-template-columns: 40vw 40vw;
+  grid-template-areas:
+    'civil consum'
+    'admin prev';
+    gap: 10px;
+
+  place-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.civil {
+  grid-area: civil;
+}
+
+.consum {
+  grid-area: consum;
+}
+
+.admin {
+  grid-area: admin;
+}
+
+.prev {
+  grid-area: prev;
+}
