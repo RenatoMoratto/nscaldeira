@@ -1,30 +1,52 @@
-import Head from '../src/components/Head'
-import styles from '../styles/Home.module.css'
+import Head from "../src/components/Head";
+import Header from '../src/components/Header';
+import Footer from '../src/components/Footer';
+import Section from "../src/components/Section";
+import style from '../styles/Home.module.css';
+import { useEffect, useState } from "react";
+import HomeButton from "../src/components/HomeButton";
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head />
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Bem vindo!
-        </h1>
+export default function Home(props) {
+    const [scrolled, setScrolled] = useState(false);
 
-        <p className={styles.description}>
-          Em breve este site poderá te receber, por enquanto acesse <a href="https://www.linkedin.com/in/nath%C3%A1lia-caldeira-052663129/">aqui</a>.
-        </p>
+    useEffect(() => {
+        window.onscroll = () => {
+            if (document.documentElement.scrollTop > 120) {
+                setScrolled(true)
+            } else {
+                setScrolled(false)
+            }
+        }
 
-      </main>
+        return () => { }
+    }, [])
 
-      <footer className={styles.footer}>
-        <a
-          href="https://github.com/RenatoMoratto"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Feito por RenatoMoratto
-        </a>
-      </footer>
-    </div>
-  )
+    return (<>
+        <Head />
+        <Header />
+        {scrolled && <HomeButton />}
+        <main>
+            <div className={style.image} id="home" />
+            <Section title="sobre" id="sobre">
+
+            </Section>
+            
+            <Section title="área de atuação" id="area-de-atuacao">
+            </Section>
+
+            <Section title="Contato" id="contato">
+
+            </Section>
+
+            <Section title="Localização" id="localizacao">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.875781508695!2d-51.16080838118508!3d-23.313884053882923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb436096d52ea9%3A0x3817c2184091835!2sCondom%C3%ADnio%20Centro%20Empresarial%20Col%C3%BAmbia!5e0!3m2!1spt-BR!2sbr!4v1629345911742!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    height="200"
+                    loading="lazy"
+                ></iframe>
+            </Section>
+        </main>
+        <Footer />
+    </>)
 }
