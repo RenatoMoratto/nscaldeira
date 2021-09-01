@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">NSCaldeira</h1>
 
-## Getting Started
+<div align="center">
+    <a href="https://reactjs.org/" target="_blank">
+        <img src="https://img.shields.io/badge/Feito com-ReactJS-blue?style=plastic&logo=react&labelColor=20232A&color=61DAFB"/>
+    </a>
+    <a href="https://www.linkedin.com/in/renato-w-moratto/" target="_blank">
+        <img src="https://img.shields.io/badge/dev-Renato%20Willyan-informational?style=plastic"/>
+    </a>
+    <a href="https://github.com/RenatoMoratto/nscaldeira/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/RenatoMoratto/nscaldeira?style=plastic"/>
+    <a/>
+    <a href="https://nscaldeira.vercel.app" target="_blank">
+        <img src="https://img.shields.io/website?down_message=fora%20do%20ar&style=plastic&up_message=no ar&url=https%3A%2F%2Fnscaldeira.vercel.app" />
+    </a>
+</div>
+<p align="center">
+Este é o repositório do website para a advogada <a href="https://www.linkedin.com/in/nath%C3%A1lia-caldeira-052663129/" target="_blank">Nathália S. Caldeira</a>.
+</p>
 
-First, run the development server:
+## 📋 Pré Requisitos
+* [NodeJS](https://nodejs.org/en/)
+* [Yarn](https://yarnpkg.com/)
 
-```bash
+## 🔧 Instalação
+
+Clone o repositório:
+```
+git clone https://github.com/RenatoMoratto/nscaldeira.git
+```
+
+Instale as dependencias: 
+```
+npm install
+# or
+yarn install
+```
+
+## ⚙️ Executando
+
+Inicie o servidor de desenvolvimento: 
+```
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra <https://localhost:3000> para acessar o site local. 
+Fique a vontade para fazer as modificações que desejar e fazer um pull request!
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tecnologias
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+* [ReactJS](https://reactjs.org/)
+* [NextJS](https://nextjs.org/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📄 Licença
+Este projeto está sob a licença MIT - confira o arquivo [LICENSE.md](https://github.com/RenatoMoratto/nscaldeira/blob/main/LICENSE) para mais detalhes.
