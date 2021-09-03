@@ -32,16 +32,19 @@ function Dropdown(props) {
     return (
         <ul>
             <div onClick={clickHandler}>
-                <i className="fa fa-bars fa-3x"></i>
+                <i className={`fa fa-bars fa-3x ${style.bars}`}></i>
             </div>
             {open && (
-                <div className={style.menu}>
-                    <Item handleClose={clickHandler} link="home" title="Home" />
-                    <Item handleClose={clickHandler} link="sobre" title="Sobre" />
-                    <Item handleClose={clickHandler} link="area-de-atuacao" title="Área de Atuação" />
-                    <Item handleClose={clickHandler} link="contato" title="Contato" />
-                    <Item handleClose={clickHandler} link="localizacao" title="Localização" />
-                </div>
+                <>
+                    <div onClick={() => setOpen(false)} className={style.backdrop} />
+                    <div className={style.menu}>
+                        <Item handleClose={clickHandler} link="home" title="Home" />
+                        <Item handleClose={clickHandler} link="sobre" title="Sobre" />
+                        <Item handleClose={clickHandler} link="area-de-atuacao" title="Área de Atuação" />
+                        <Item handleClose={clickHandler} link="contato" title="Contato" />
+                        <Item handleClose={clickHandler} link="localizacao" title="Localização" />
+                    </div>
+                </>
             )}
         </ul >
     )
