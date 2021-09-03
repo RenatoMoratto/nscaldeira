@@ -3,10 +3,21 @@
   align-items: center;
   justify-content: center;
 
-  width: 40vw;
-  height: 40vw;
+  width: 11.25rem;
+  height: 11.25rem;
 
   background: rgba(77, 0, 45, 0.6);
+}
+
+.card:hover,
+.image:hover {
+  width: 11.55rem;
+  height: 11.55rem;
+  border-radius: 3px;
+}
+
+.card:hover > .title {
+  font-size: var(--typo-sub-title);
 }
 
 .title {

@@ -1,7 +1,7 @@
 .grid {
   display: grid;
-  grid-template-rows: 40vw 40vw;
-  grid-template-columns: 40vw 40vw;
+  grid-template-rows: 11.25rem 11.25rem;
+  grid-template-columns: 11.25rem 11.25rem;
   grid-template-areas:
     'civil consum'
     'admin prev';
@@ -10,6 +10,7 @@
   place-items: center;
   justify-content: center;
   align-content: center;
+  z-index: 5;
 }
 
 .civil {
@@ -26,4 +27,14 @@
 
 .prev {
   grid-area: prev;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .4);
 }
