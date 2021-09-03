@@ -7,7 +7,8 @@
   justify-content: space-around;
   align-items: center;
   padding: 0.2rem 1rem;
-  background-color: rgba(77, 0, 45, 0.2);
+  /* background-image: linear-gradient(to right bottom, #4d002d, #744465, #9b819c, #c8bfd0, #ffffff); */
+  background-image: linear-gradient(107.01deg, #4D002D 49.69%, rgba(77, 0, 45, 0) 158.45%);
   height: 86px;
 }
 
@@ -20,6 +21,7 @@
 .title,
 .sub-title {
   font: 400;
+  color: var(--color-white);
 }
 
 .title {
@@ -31,7 +33,7 @@
 .line {
   width: 11.5rem;
   height: 1px;
-  background-color: var(--color-black);
+  background-color: rgb(255, 255, 255);
 }
 
 .sub-title {
