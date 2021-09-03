@@ -1,11 +1,10 @@
 import style from './TextCard.module.css';
 
-function TextCard({ text, image }) {
-
+function TextCard(props) {
     return (
-        <div className={style['content-image']} style={{ backgroundImage: `url(/${image})` }}>
+        <div className={style['content-image']} style={{ backgroundImage: `url(/${props.image})` }}>
             <div className={style.content}>
-                {text}
+                <p>{props.content}</p>
             </div>
         </div>
     )
