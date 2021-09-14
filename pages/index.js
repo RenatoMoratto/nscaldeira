@@ -6,6 +6,7 @@ import style from '../styles/Home.module.css';
 import { useEffect, useState } from "react";
 import HomeButton from "../src/components/HomeButton";
 import CardGrid from "../src/components/CardGrid";
+import Contato from "../src/components/Contato";
 
 export default function Home(props) {
     const [scrolled, setScrolled] = useState(false);
@@ -36,13 +37,8 @@ export default function Home(props) {
                 <CardGrid />
             </Section>
 
-            <Section title="Contato" id="contato">
-                <div>
-
-                </div>
-                <p>Telefone</p>
-                <p>Contato</p>
-                <p>Email</p>
+            <Section title="contato" id="contato">
+                <Contato tel="3345-0708" phone="(43) 99966-8091" email="advcaldeira@gmail.com" />
             </Section>
 
             <Section title="Localização" id="localizacao">
