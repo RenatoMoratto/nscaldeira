@@ -1,5 +1,5 @@
 .content-image {
-  margin: .7rem 1rem;
+  margin: 0.7rem 1rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7,15 +7,14 @@
 }
 
 .content {
-  width: 90vw;
+  width: calc(100vw - 20px);
   background: rgba(245, 241, 237, 0.7);
   padding: 10px;
 }
 
 .content p {
   font-family: Cinzel;
-  font-size: .9em;
+  font-size: 0.9em;
   letter-spacing: 0.065em;
   color: #000000;
 }
-

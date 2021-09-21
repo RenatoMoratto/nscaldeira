@@ -1,11 +1,11 @@
 .grid {
   display: grid;
-  grid-template-rows: 11.25rem 11.25rem;
-  grid-template-columns: 11.25rem 11.25rem;
+  grid-template-rows: 45vw 45vw;
+  grid-template-columns: 45vw 45vw;
   grid-template-areas:
     'civil consum'
     'admin prev';
-    gap: 10px;
+  gap: 10px;
 
   place-items: center;
   justify-content: center;

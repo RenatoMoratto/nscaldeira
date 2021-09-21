@@ -2,9 +2,9 @@
   margin-bottom: 1rem;
 }
 
-.title, .content {
+.title,
+.content {
   padding: 0.2rem 1rem;
-
 }
 
 .title {
@@ -15,8 +15,9 @@
   margin-bottom: 5px;
 
   background-color: var(--color-secundary);
-  color: rgba(0, 0, 0, 0.7);
-  font: 700 var(--typo-title)/1rem 'Cinzel', serif;
+  color: var(--color-primary);
+  letter-spacing: 0.05rem;
+  font: bolder var(--typo-size-sub-title) var(--typo-font-sub-title);
   text-transform: capitalize;
 }
 
@@ -26,6 +27,6 @@
   align-items: center;
   line-height: 22px;
   text-align: justify;
-  font-size: var(--typo-text);
+  font-family: var(--typo-font-text);
+  font-size: var(--typo-size-text);
 }
-

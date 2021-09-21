@@ -1,13 +1,30 @@
 :root {
   /* Colors */
   --color-primary: #4d002d;
-  --color-secundary: #dad2bc;
-  --color-bg: #f5f1ed;
+  --color-secundary: #e2dede;
+  --color-select-menu: #f5f1ed;
+  --color-bg-card: rgba(0, 26, 77, 0.6);
+  --color-bg: #fff9f6;
   --color-white: #fff;
   --color-black: #000;
 
   /* Typography */
-  --typo-title: 1.4094875em;
-  --typo-sub-title: 1.163475em;
-  --typo-text: 1.125em;
+
+  /* Sizes */
+  --typo-size-title: 1.4094875em;
+  --typo-size-sub-title: 1.163475em;
+  --typo-size-text: 1.125em;
+
+  /* Fonts */
+  --typo-font-title: 'Cinzel Decorative', serif, Helvetica, sans-serif, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Neue;
+
+  --typo-font-sub-title: 'Cinzel', serif, Helvetica, sans-serif, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Neue;
+
+  --typo-font-text: 'Inria Serif', serif, Helvetica, sans-serif, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Neue;
 }

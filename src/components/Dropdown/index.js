@@ -1,53 +1,57 @@
-import style from './Dropdown.module.css'
-import { useState } from 'react'
-// import Link from 'next/link';
-import { Link } from "react-scroll";
+import style from './Dropdown.module.css';
+import { useState } from 'react';
+import { Link } from 'react-scroll';
+import { HiMenu } from 'react-icons/hi';
+import { dropdownData } from './dropdown';
 
 function Item(props) {
-    const handleClose = () => setTimeout(props.handleClose, 100);
-    return (
-        <li className={style.item}>
-            <Link
-                onClick={handleClose}
-                activeClass="active"
-                to={`${props.link}`}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-            >
-                {props.title}
-            </Link>
-        </li>
-    );
+  const handleClose = () => setTimeout(props.handleClose, 100);
+  return (
+    <li className={style.item}>
+      <Link
+        onClick={handleClose}
+        activeClass="active"
+        to={props.link}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        {props.title}
+      </Link>
+    </li>
+  );
 }
 
 function Dropdown(props) {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-    const clickHandler = () => {
-        setOpen(!open);
-    }
+  const clickHandler = () => {
+    setOpen(!open);
+  };
 
-    return (
-        <ul>
-            <div onClick={clickHandler}>
-                <i className={`fa fa-bars fa-3x ${style.bars}`}></i>
-            </div>
-            {open && (
-                <>
-                    <div onClick={() => setOpen(false)} className={style.backdrop} />
-                    <div className={style.menu}>
-                        <Item handleClose={clickHandler} link="home" title="Home" />
-                        <Item handleClose={clickHandler} link="sobre" title="Sobre" />
-                        <Item handleClose={clickHandler} link="area-de-atuacao" title="Área de Atuação" />
-                        <Item handleClose={clickHandler} link="contato" title="Contato" />
-                        <Item handleClose={clickHandler} link="localizacao" title="Localização" />
-                    </div>
-                </>
-            )}
-        </ul >
-    )
+  return (
+    <ul>
+      <HiMenu onClick={clickHandler} className={style.icon} />
+      {open && (
+        <>
+          <div onClick={() => setOpen(false)} className={style.backdrop} />
+          <div className={style.menu}>
+            {dropdownData.map((item) => {
+              return (
+                <Item
+                  key={item.title}
+                  handleClose={clickHandler}
+                  link={item.link}
+                  title={item.title}
+                />
+              );
+            })}
+          </div>
+        </>
+      )}
+    </ul>
+  );
 }
 
 export default Dropdown;

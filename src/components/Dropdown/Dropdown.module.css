@@ -2,9 +2,10 @@
   position: absolute;
   flex-direction: column;
   right: 0;
-  top: 6.4rem;
+  top: 6.25rem;
+  width: 54vw;
+  max-width: 230px;
   display: flex;
-  width: 50vw;
   background-color: var(--color-secundary);
   z-index: 15;
 }
@@ -14,13 +15,12 @@
   display: flex;
   padding: 0.8rem;
   list-style: none;
-  font-weight: bold;
   text-align: left;
   text-transform: capitalize;
 }
 
 .item:hover {
-  background-color: rgba(245, 241, 237, 0.7);
+  background-color: var(--color-select-menu);
 }
 
 .item > a {
@@ -29,7 +29,8 @@
   height: 100%;
   width: 100%;
   color: #6f6b60;
-  font-size: var(--typo-sub-title);
+  font-size: var(--typo-size-sub-title);
+  font-family: var(--typo-font-sub-title);
 }
 
 .item > a:hover {
@@ -37,8 +38,10 @@
   font-size: 1.3rem;
 }
 
-.bars {
-  color: var(--color-secundary);
+.icon {
+  color: var(--color-primary);
+  height: 3rem;
+  width: auto;
 }
 
 .backdrop {

@@ -1,16 +1,13 @@
 import { animateScroll as scroll } from 'react-scroll';
+import { AiFillHome } from 'react-icons/ai';
 import style from './HomeButton.module.css';
 
-function HomeButton(props) {
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    }
-
-    return (
-        <button className={style.circle} onClick={scrollToTop}>
-            <i className={`fa fa-home fa-2x ${style.icon}`}></i>
-        </button>
-    )
+function HomeButton() {
+  return (
+    <button className={style.circle} onClick={() => scroll.scrollToTop()}>
+      <AiFillHome className={style.icon} />
+    </button>
+  );
 }
 
 export default HomeButton;
