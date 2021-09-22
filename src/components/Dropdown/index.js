@@ -2,7 +2,7 @@ import style from './Dropdown.module.css';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { HiMenu } from 'react-icons/hi';
-import { dropdownData } from './dropdown';
+import { dropdownData } from './dropdownData';
 
 function Item(props) {
   const handleClose = () => setTimeout(props.handleClose, 100);
